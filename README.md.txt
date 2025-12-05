@@ -1,30 +1,64 @@
-# COSM Assignment – Statistical Tests
+# Student Performance Statistical Tests
 
-This project performs T-test, Z-test and F-test on the Students Performance dataset taken from Kaggle.
+This project performs statistical hypothesis testing using the **StudentsPerformance** dataset from Kaggle.  
+We compare **Math Score** and **Reading Score** using:
 
-## Dataset
-File: StudentsPerformance.csv
+- Z-Test
+- T-Test
+- F-Test
 
-## Tests performed
-- Independent Two-sample T-test
-- Z-test
-- F-test (variance ratio)
+## 📂 Dataset
+Dataset used: **StudentsPerformance.csv**
 
-## Tools used
-- Google Colab
-- Python
-- Pandas, Numpy, Scipy, Statsmodels
+---
 
-## Results Summary
-- T-test and Z-test results show a significant difference between Math and Reading scores.
-- F-test shows the variance ratio between scores.
+## 📊 Statistical Tests
 
-## How to run
-1. Upload StudentsPerformance.csv to Colab
-2. Run the notebook
-3. Results are printed in output
+### 🟡 T-Test
+Compares the means of two samples (Math vs Reading).
 
-If p-value < 0.05 → Reject null hypothesis (Significant difference)
+### 🔵 Z-Test
+Very similar to T-test when sample size is large.
 
-If p-value ≥ 0.05 → Fail to reject null (No significant difference)
+### 🔴 F-Test
+Compares the variances between the two scores.
+
+## 📦 Requirements
+
+Install the following packages:
+pip install pandas numpy scipy statsmodels matplotlib
+
+## ▶️ How to Run
+
+Run the Python script:
+
+python main.py
+
+## 📈 Results Interpretation
+
+Use the P-value:
+
+- **P-value < 0.05** → Reject the null hypothesis  
+  ✔ There is a significant difference between the scores.
+
+- **P-value ≥ 0.05** → Fail to reject the null hypothesis  
+  ✔ No significant difference.
+
+## ✔️ Example Output
+T-test: statistic = -4.627, p-value = 3.94e-06
+Z-test: statistic = -4.627, p-value = 3.70e-06
+F-test: statistic = 1.078
+
+These results show a **statistically significant difference** between Math and Reading scores.
+## 👨‍🏫 Submitted By
+Name:K.PREM KUMAR REDDY
+Roll No:24XV1M6753
+Course:CSE-DS
+
+
+
+
+
+
+
 
