@@ -23,3 +23,7 @@ File: StudentsPerformance.csv
 1. Upload StudentsPerformance.csv to Colab
 2. Run the notebook
 3. Results are printed in output
+
+If p-value < 0.05 → Reject null hypothesis (Significant difference)
+
+If p-value ≥ 0.05 → Fail to reject null (No significant difference)
